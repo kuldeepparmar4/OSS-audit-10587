@@ -1,8 +1,5 @@
 #  Open Source Software Project – Linux Kernel Audit
 
-#OSS-audit-24BAI10587
-Open Source Audit Project on Linux Kernel with 5 shell scripts and report.
-
 ##  Student Details
 
 **Name:** Kuldeep Parmar <br>
