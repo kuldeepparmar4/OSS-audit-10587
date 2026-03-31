@@ -1,0 +1,24 @@
+#!/bin/bash
+# Script 4: Log Analyzer
+
+LOGFILE=$1
+KEYWORD=${2:-"error"}
+COUNT=0
+
+# Check file exists
+if [ ! -f "$LOGFILE" ]; then
+    echo "File not found"
+    exit 1
+fi
+
+# Read file line by line
+while read LINE; do
+    if echo "$LINE" | grep -iq "$KEYWORD"; then
+        COUNT=$((COUNT + 1))
+    fi
+done < "$LOGFILE"
+
+echo "Keyword '$KEYWORD' found $COUNT times"
+
+echo "Last 5 matches:"
+grep -i "$KEYWORD" "$LOGFILE" | tail -5
