@@ -1,6 +1,0 @@
------ Open Source Manifesto -----
-Date: Tue Mar 31 13:24:42 UTC 2026
-
-I believe freedom means sharing.
-I use git every day.
-I want to build apps and share it with everyone.
